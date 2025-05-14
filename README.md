@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dark Forge 🏔️⚒️
 
-## Getting Started
+**Forge Solana meme coins with the wisdom of Gandalf in Middle Earth**
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Dark Forge is a whimsical Solana meme coin creator where users:
+- Consult Gandalf AI to generate token details (name, symbol, backstory)
+- "Forge" their token in the fires of Mount Doom
+- Receive a complete token package ready for deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 [Explore the Forge](https://darkforge.vercel.app/)
 
-## Learn More
+## Local Development
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js v18+
+- Solana CLI (optional for full functionality)
+- OpenAI API key (via OpenRouter)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Setup
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/XerxesCoder/darkforge.git
+   cd dark-forge
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Create `.env` file:
+   ```env
+   OPENROUTER_API_KEY=your_openrouter_key_here
+   SITE_URL=need live website, no need in development
+   SOLANA_RPC_URL=better to be a non-public
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `OPENROUTER_API_KEY` | Yes | Your OpenRouter API key for Gandalf AI |
+| `SITE_URL` | Yes | Application URL (for OpenRouter headers) |
+| `SOLANA_RPC_URL` | No | Solana RPC endpoint (defaults to mainnet-beta) |
+
+## How It Works
+
+### 1. Consult Gandalf
+
+The AI will generate:
+- Meme coin name (2-4 words)
+- Token symbol (3-5 characters)
+- Humorous backstory
+- Token use cases
+- AI image generation prompt
+- Basic tokenomics
+
+### 2. Forge in Mount Doom
+
+After generating token details:
+- Click "Forge in Mount Doom"
+- The system prepares your token package
+- Receive Solana token configuration files
+
+### 3. Deploy Your Token
+
+Use the generated files to deploy:
+- Solana SPL token
+- Metadata
+- Image assets
+
+## Tech Stack
+
+- **Frontend**: Next.js, Tailwind CSS
+- **AI**: OpenRouter (GPT-4/GPT-3.5)
+
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+
+## Contact
+
+If you have any questions or feedback, please feel free to reach out.
+
+- **Telegram**: [@xerxescoder](https://t.me/xerxescoder)
+- **Telegram Channel**: [@xerxescodes](https://t.me/xerxescodes)
+- **Email**: [xerxescode@gmail.com](mailto:xerxescode@gmail.com)
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+"One Token to rule them all, One Token to find them, One Token to bring them all, and in the darkness bind them."
+
+Made with ❤️ by Xerxes
+

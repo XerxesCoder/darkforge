@@ -1,6 +1,11 @@
+"use client";
 import { Flame, Skull } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 export default function AppHeader() {
+  const pathname = usePathname();
+
   return (
     <header className="py-6 px-4">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
@@ -10,13 +15,21 @@ export default function AppHeader() {
             <span className="text-mordor-mithril">Forge</span>
           </h1>
         </div>
-
-        <Link
-          href="/middle-earth"
-          className="btn-mithril flex items-center text-sm cursor-pointer"
-        >
-          Enter Middle-Earth
-        </Link>
+        {pathname == "/" ? (
+          <Link
+            href="/middle-earth"
+            className="btn-mithril flex items-center text-sm cursor-pointer"
+          >
+            Enter Middle-Earth
+          </Link>
+        ) : (
+          <Link
+            href="/"
+            className="btn-mithril flex items-center text-sm cursor-pointer"
+          >
+            Back To Earth
+          </Link>
+        )}
       </div>
     </header>
   );

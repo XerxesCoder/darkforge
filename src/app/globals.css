@@ -242,11 +242,11 @@
 
 @layer components {
   .btn-mithril {
-    @apply bg-gradient-to-br from-mordor-mithril to-white text-mordor-black px-6 py-3 rounded-md shadow-mordor-mithril font-ring hover:shadow-lg hover:scale-105 transition-all duration-300;
+    @apply cursor-pointer disabled:opacity-45 disabled:shadow-none bg-gradient-to-br from-mordor-mithril to-white text-mordor-black px-6 py-3 rounded-md shadow-mordor-mithril font-ring hover:shadow-lg hover:scale-105 transition-all duration-300;
   }
 
   .btn-sauron {
-    @apply bg-gradient-to-br from-mordor-sauron to-red-600 text-white px-6 py-3 rounded-md shadow-rune font-ring hover:shadow-lg hover:scale-105 transition-all duration-300;
+    @apply cursor-pointer bg-gradient-to-br from-mordor-sauron to-red-600 text-white px-6 py-3 rounded-md shadow-rune font-ring hover:shadow-lg hover:scale-105 transition-all duration-300;
   }
 
   .bg-lava {

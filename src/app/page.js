@@ -8,7 +8,6 @@ import WizardsCounsel from "@/components/Sections/WizardFAQ";
 export default function Home() {
   return (
     <main className="min-h-screen bg-mordor text-mordor-mithril px-4">
-      <AppHeader />
       <Hero />
       <HowItWorks />
       <Features />
